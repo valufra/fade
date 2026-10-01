@@ -1,0 +1,12 @@
+pandas
+scipy
+scikit-learn
+transformers
+nltk
+torch
+tensorflow
+flax
+tf-keras
+sentencepiece
+matplotlib
+statsmodels
