@@ -1,6 +1,6 @@
 # FADE – Ricostruzione di architettura e comportamento (baseline per l'Impact Analysis)
 
-> Documento di *reverse engineering* prodotto sul commit `33a9dd3` (branch `Managment`).
+> Documento di *reverse engineering* prodotto sul commit `33a9dd3` (branch `Management`).
 > Scopo: fornire la baseline (componenti, dipendenze, flussi, punti critici) su cui condurre
 > l'impact analysis a grana grossa delle tre Change Request (CR) del gruppo.
 
