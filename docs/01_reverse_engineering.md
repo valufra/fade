@@ -1,8 +1,9 @@
-# FADE – Ricostruzione di architettura e comportamento (baseline per l'Impact Analysis)
+# FADE – Reverse engineering: architettura e comportamento
 
 > Documento di *reverse engineering* prodotto sul commit `33a9dd3` (branch `Management`).
 > Scopo: fornire la baseline (componenti, dipendenze, flussi, punti critici) su cui condurre
-> l'impact analysis a grana grossa delle tre Change Request (CR) del gruppo.
+> l'analisi d'impatto preliminare delle tre Change Request (CR) del gruppo, riportata dentro ciascuna CR
+> in [change-requests/](change-requests/00_panoramica.md).
 
 ---
 
@@ -388,15 +389,12 @@ Utile come primo filtro per individuare lo **Starting Impact Set (SIS)** di cias
 
 ---
 
-## 6. Prossimo passo
+## 6. Uso nelle Change Request
 
-Per ciascuna delle tre CR compilare:
+Componenti (C1–C10, D1–D2), matrice delle dipendenze (§2.3), rischi (R1–R12, §4) e mappa del §5 sono
+usati dall'analisi d'impatto preliminare di ciascuna CR (SIS, CIS con profondità, rischi, test di
+regressione). Le CR sono in [change-requests/](change-requests/00_panoramica.md):
 
-| Campo | Contenuto |
-|---|---|
-| CR-ID e descrizione | |
-| SIS | componenti modificati direttamente (da §2.2 / §5) |
-| CIS | SIS + propagazione lungo dipendenze I/S/F (§2.3) |
-| Rischi coinvolti | riferimenti R1…R12 (§4) |
-| Stima (bassa/media/alta) e motivazione | |
-| Interazioni con le altre CR | componenti condivisi → ordine di implementazione consigliato |
+- [CR1 – Componenti registrabili e configurabili + refactoring generale](change-requests/CR1_registrabilita_refactoring.md)
+- [CR2 – CLI non interattiva, file di configurazione, seed riproducibile](change-requests/CR2_cli_config_seed.md)
+- [CR3 – Nuovo operatore di mutazione e nuovo sintomo](change-requests/CR3_nuovo_operatore_sintomo.md)
